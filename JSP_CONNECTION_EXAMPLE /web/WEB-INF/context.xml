@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/ServletUser"/>
+<servlet>
+    <display-name>ServletUser</display-name>
+    <servlet-name>ServletUser</servlet-name>
+    <servlet-class>java.database.Reader</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ServletUser</servlet-name>
+    <url-pattern>/ServletUser</url-pattern>
+</servlet-mapping>

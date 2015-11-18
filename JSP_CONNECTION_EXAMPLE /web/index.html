@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <script>
+        function validate() {
+            var username = document.form.SSN.value;
+            var password = document.form.pass.value;
+            if (username == "") {
+                alert("Enter Username!");
+                return false;
+            }
+            if (password == "") {
+                alert("Enter Password!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Welcome   </h1>
+        <form   action="connect.jsp" onsubmit="javascript:return validate();">
+            SSN :<input type="text" name="SSN" value="" />
+            PASS:<input type="password" name="pass" value="" />
+            <input type="submit" value="log In" />
+        </form>
+
+
+
+    </body>
+
+</html>
